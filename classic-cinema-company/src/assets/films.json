@@ -46,7 +46,8 @@
                 "medium": "thepool_adhcgz,w759.png",
                 "large": "thepool_adhcgz,w1108.png",
                 "xlarge": "thepool_adhcgz,w1400.png"
-            }
+            },
+            "startingDate": "2022-12-01"
         },
         {
             "id": 3,

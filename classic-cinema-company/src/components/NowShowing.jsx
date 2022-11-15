@@ -5,7 +5,12 @@ import "./NowShowing.css";
 
 const NowShowing = () => {
 
-    const films = filmsFile.films.map((film) => {
+    const filmsNowShowing = filmsFile.films.filter(film => {
+        if (!film.startingDate)
+            return true;
+        return Date.parse(film.startingDate) <= new Date();
+    });
+    const films = filmsNowShowing.map((film) => {
         return (
         <div key={film.id} className="nowShowingMovie">
             <img src={`/${film.nowShowingSrcset.small}`} alt={film.nowShowingSrcset.small} />

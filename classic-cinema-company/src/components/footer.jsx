@@ -18,10 +18,10 @@ const Footer = () => {
                 </div>
                 <div className="film-description">
                     <h3>FOLLOW US</h3>
-                    <img src="/twitter.png" alt="twitter-icon"/>
-                    <img src="/instagram.png" alt="instagram-icon"/>
-                    <img src="/facebook.png" alt="facebook-icon"/>
-                    <img src="/youtube.png" alt="youtube-icon"/>
+                    <img src="/twitter.png" className="footer-icon-images" alt="twitter-icon"/>
+                    <img src="/instagram.png" className="footer-icon-images" alt="instagram-icon"/>
+                    <img src="/facebook.png" className="footer-icon-images" alt="facebook-icon"/>
+                    <img src="/youtube.png" className="footer-icon-images" alt="youtube-icon"/>
                 </div>
             </div>
             <p>Copyright &copy; The Classic Cinema Company Ltd 2020. All rights reserved.</p>

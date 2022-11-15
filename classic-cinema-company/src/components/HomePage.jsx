@@ -2,6 +2,7 @@ import React from "react";
 import './Common.css';
 import lorem from '../assets/lorem.json';
 import './HomePage.css';
+import NowShowing from "./NowShowing";
 
 const HomePage = () => {
     const data = lorem.lorem;
@@ -17,6 +18,8 @@ const HomePage = () => {
                     </tr>
                 </tbody>
             </table>
+
+            <NowShowing />
     </>;
 };
 

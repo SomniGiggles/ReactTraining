@@ -8,12 +8,10 @@ const FilmDetail = () => {
     const params = useParams();
     const id = parseInt(params.id);
 
-    debugger;
     const film = films.films.find((film) => {
         return film.id === id;
     })
 
-    debugger;
     return <FilmInfo 
         key={film.id}
         id={film.id}

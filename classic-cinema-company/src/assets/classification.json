@@ -1,0 +1,11 @@
+{
+    "classifications" : [
+        {"id":"U", "image":"BBFC_U_2019.svg"},
+        {"id":"PG", "image":"BBFC_PG_2019.svg"},
+        {"id":"12", "image":"BBFC_12_2019.svg"},
+        {"id":"12A", "image":"BBFC_12A_2019.svg"},
+        {"id":"15", "image":"BBFC_15_2019.svg"},
+        {"id":"18", "image":"BBFC_18_2019.svg"},
+        {"id":"R18", "image":"BBFC_R18_2019.svg"}
+    ]
+}

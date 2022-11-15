@@ -11,7 +11,7 @@ import BookTickets from "./components/BookTickets";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App main-background">
         <h1>Classic Cinema Company</h1>
         <BrowserRouter>
         <Header />

@@ -71,6 +71,7 @@
 .joinForm > label  {
   grid-column: labels;
   grid-row: auto;
+  color: black;
 }
 .joinForm > input,
 .joinForm > textarea,

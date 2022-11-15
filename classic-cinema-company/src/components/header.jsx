@@ -11,7 +11,7 @@ const Header = () => {
 
     return <>
             <nav style={{margin: 10}}>
-                <img src="/assets/CCC-logo.png" className="bannerLogo" alt='bannerLogo'/>
+                <img src="/CCC-logo.png" className="bannerLogo" alt='bannerLogo'/>
             <NavLink to='/' style={{padding: 5}}>Home</NavLink>
             <NavLink to='/schedule' style={{padding: 5}}>What's On</NavLink>
             <NavLink to='/comingsoon' style={{padding: 5}}>Coming Soon</NavLink>

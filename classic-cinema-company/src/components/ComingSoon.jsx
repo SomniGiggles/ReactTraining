@@ -4,6 +4,10 @@ import { NavLink } from 'react-router-dom';
 import "./NowShowing.css";
 
 const ComingSoon = () => {
+    const formatDate = (textDate) => {
+        const date = new Date(Date.parse(textDate));
+        return date.toLocaleDateString('en-GB');
+    };
     const filmsNowShowing = filmsFile.films.filter(film => {
         if (!film.startingDate)
             return false;
@@ -14,6 +18,7 @@ const ComingSoon = () => {
         <div key={film.id} className="nowShowingMovie">
             <img src={`/${film.nowShowingSrcset.small}`} alt={film.nowShowingSrcset.small} />
             <h3><NavLink className='filmTitle' to={`/films/${film.id}`}>{film.title}</NavLink></h3>
+            <label>Film opens on {formatDate(film.startingDate)}</label>
         </div>
         );
     })

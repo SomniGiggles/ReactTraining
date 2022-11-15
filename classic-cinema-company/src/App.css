@@ -46,3 +46,14 @@
 .film-container {
   display: flex;
 }
+
+.main-background {
+  background-color: #413747;
+  color: white;
+  min-height: 100vh
+}
+
+.footer-background {
+  background-color: #665f6c;
+  color: white;
+}

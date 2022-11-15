@@ -13,7 +13,7 @@ const FilmInfo = (props) => {
             <h3><NavLink className='filmTitle' to={`/films/${props.id}`}>{props.name}</NavLink></h3>
             <CertificateIcon age={props.ageCert} />
             <div className="film-description">{props.description}</div>
-            <div className="film-container">{allTimes}</div>
+            <div >{allTimes}</div>
             <NavLink className="button-42" to='/booktickets'>Book now</NavLink>
         </div>
     )

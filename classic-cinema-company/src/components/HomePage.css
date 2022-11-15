@@ -2,11 +2,15 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    border: 1px solid white;
 };
 
+table th {
+    border: 1px solid white;
+}
 
 td {
-    width: 30rem;
+    border: 1px solid white;
 };
 
 

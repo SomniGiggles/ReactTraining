@@ -14,7 +14,7 @@ const FilmInfo = (props) => {
             <CertificateIcon age={props.ageCert} />
             <div className="film-description">{props.description}</div>
             <div className="film-container">{allTimes}</div>
-            <button>Book now</button>
+            <button className="button-42">Book now</button>
         </div>
     )
 }

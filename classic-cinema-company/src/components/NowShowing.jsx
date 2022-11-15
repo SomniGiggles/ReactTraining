@@ -1,12 +1,13 @@
 import React from 'react';
 import filmsFile from "../assets/films.json";
 import { NavLink } from 'react-router-dom';
+import "./NowShowing.css";
 
 const NowShowing = () => {
 
     const films = filmsFile.films.map((film) => {
         return (
-        <div key={film.id}>
+        <div key={film.id} className="nowShowingMovie">
             <img src={`/${film.nowShowingSrcset.small}`} alt={film.nowShowingSrcset.small} />
             <h3><NavLink className='filmTitle' to={`/films/${film.id}`}>{film.title}</NavLink></h3>
         </div>

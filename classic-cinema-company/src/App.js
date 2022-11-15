@@ -8,6 +8,7 @@ import SignUp from './components/SignUp';
 import ComingSoon from "./components/ComingSoon";
 import YourVisit from "./components/YourVisit";
 import BookTickets from "./components/BookTickets";
+import FilmDetail from './components/FilmDetail';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path='/comingsoon' element={<ComingSoon />}></Route>
           <Route path='/yourvisit' element={<YourVisit />}></Route>
           <Route path='/booktickets' element={<BookTickets />}></Route>
+          <Route path='/films/:id' element={<FilmDetail />}></Route>
+          <Route path='*' element={<HomePage />}></Route>
         </Routes>
         <Footer />
         </BrowserRouter>

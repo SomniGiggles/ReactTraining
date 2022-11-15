@@ -1,6 +1,7 @@
 import React from "react";
 import './FilmInfo.css';
 import CertificateIcon from "./CertificateIcon";
+import { NavLink } from 'react-router-dom';
 
 const FilmInfo = (props) => {
 
@@ -9,7 +10,7 @@ const FilmInfo = (props) => {
     return (
         <div>
             <img src={props.imageLink} alt={props.imageLink}></img>
-            <h3>{props.name}</h3>
+            <h3><NavLink className='filmTitle' to={`/films/${props.id}`}>{props.name}</NavLink></h3>
             <CertificateIcon age={props.ageCert} />
             <div className="film-description">{props.description}</div>
             <div className="film-container">{allTimes}</div>

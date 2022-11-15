@@ -7,6 +7,7 @@ const Schedule = () => {
     const allFilms = (films.films).map(film => 
         <FilmInfo 
             key={film.id}
+            id={film.id}
             name={film.title}
             description={film.synopsis}
             filmTimes={film.showtimes}

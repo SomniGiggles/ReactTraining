@@ -10,14 +10,15 @@ function App() {
   return (
     <div className="App">
         <h1>Classic Cinema Company</h1>
-        <Header />
         <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/schedule' element={<Schedule />}/>
-          <Route path='/signup' element={<Signup />}/>
-        </Routes>
-        <Footer />
+          <Header />
+          <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/schedule' element={<Schedule />}/>
+            <Route path='/signup' element={<Signup />}/>
+            <Route path='*' element={<Home />}/>
+          </Routes>
+          <Footer />
         </BrowserRouter>
         <Footer />
     </div>

@@ -10,6 +10,7 @@ const Header = () => {
     //Some sort of image file at the top
 
     return <>
+    <div className='navbar'>
             <nav style={{margin: 10}}>
                 <img src="/CCC-logo.png" className="bannerLogo" alt='bannerLogo'/>
             <NavLink to='/' style={{padding: 5}}>Home</NavLink>
@@ -20,7 +21,7 @@ const Header = () => {
             <NavLink to='/booktickets' style={{padding: 5}}>Book Tickets</NavLink>
             <input type="text" placeholder="Search" />
             </nav>
-
+            </div>
     </>;
 };
 

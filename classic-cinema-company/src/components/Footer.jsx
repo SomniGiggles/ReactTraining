@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -7,9 +8,13 @@ const Footer = () => {
                 <img src="/footer-logo.png" width="200px" alt="footer-logo"/>
                 <div className="film-description">
                     <h3>MORE INFO</h3>
-                    <button>About us</button>
-                    <button>FAQ</button>
-                    <button>Contact us</button>
+                    <div className='navbar'>
+                        <nav style={{margin: 10}}>
+                            <NavLink to='/' style={{padding: 5}}>About us</NavLink>
+                            <NavLink to='/' style={{padding: 5}}>FAQ</NavLink>
+                            <NavLink to='/' style={{padding: 5}}>Contact us</NavLink>
+                        </nav>
+                    </div>
                 </div>
                 <div className="film-description">
                     <h3>FIND US</h3>
@@ -18,10 +23,10 @@ const Footer = () => {
                 </div>
                 <div className="film-description">
                     <h3>FOLLOW US</h3>
-                    <img src="/twitter.png" alt="twitter-icon"/>
-                    <img src="/instagram.png" alt="instagram-icon"/>
-                    <img src="/facebook.png" alt="facebook-icon"/>
-                    <img src="/youtube.png" alt="youtube-icon"/>
+                    <img src="/twitter.png" className="footer-icon-images" alt="twitter-icon"/>
+                    <img src="/instagram.png" className="footer-icon-images" alt="instagram-icon"/>
+                    <img src="/facebook.png" className="footer-icon-images" alt="facebook-icon"/>
+                    <img src="/youtube.png" className="footer-icon-images" alt="youtube-icon"/>
                 </div>
             </div>
             <p>Copyright &copy; The Classic Cinema Company Ltd 2020. All rights reserved.</p>

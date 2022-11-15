@@ -80,9 +80,18 @@
   grid-row: auto;
   border: none;
   padding: 1em;
+  color:black
 }
 
 .formDiv {
   width: 80%;
   margin: 0 auto;
+}
+
+.navbar > nav > a {
+  color: white;
+}
+
+.footer-icon-images {
+  padding: 15px;
 }

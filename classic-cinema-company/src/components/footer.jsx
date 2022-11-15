@@ -24,7 +24,7 @@ const Footer = () => {
                     <img src="/youtube.png" alt="youtube-icon"/>
                 </div>
             </div>
-            <p>Copyright C The Classic Cinema Company Ltd 2020. All rights reserved.</p>
+            <p>Copyright &copy; The Classic Cinema Company Ltd 2020. All rights reserved.</p>
             <button>Back to top</button>
         </div>
     )

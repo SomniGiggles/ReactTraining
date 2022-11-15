@@ -1,9 +1,9 @@
 import './App.css';
-import Footer from './components/footer';
-import Header from './components/header';
-import Home from './components/home';
-import Schedule from './components/schedule';
-import Signup from './components/signup';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Home from './components/Home';
+import Schedule from './components/Schedule';
+import Signup from './components/Signup';
 
 function App() {
   return (

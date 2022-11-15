@@ -11,6 +11,7 @@ const Schedule = () => {
             description={film.synopsis}
             filmTimes={film.showtimes}
             ageCert={film.agecert}
+            imageLink={film.nowShowingSrcset.small}
         />)
 
     return (

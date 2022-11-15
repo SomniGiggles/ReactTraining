@@ -19,7 +19,9 @@ const Footer = () => {
                 <div className="film-description">
                     <h3>FIND US</h3>
                     <img src="/footer-map.png" width="100px" alt="map"/>
-                    <p>Lorem ipsum dolar sit amet, consectetuer</p>
+                    <h5>Opening hours</h5>
+                    <p>Mon - Fri: 8am - 8pm</p>
+                    <p>Sat - Sun: 8am - 11pm</p>
                 </div>
                 <div className="film-description">
                     <h3>FOLLOW US</h3>

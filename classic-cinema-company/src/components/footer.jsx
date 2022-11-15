@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -7,9 +8,13 @@ const Footer = () => {
                 <img src="/footer-logo.png" width="200px" alt="footer-logo"/>
                 <div className="film-description">
                     <h3>MORE INFO</h3>
-                    <button>About us</button>
-                    <button>FAQ</button>
-                    <button>Contact us</button>
+                    <div className='navbar'>
+                        <nav style={{margin: 10}}>
+                            <NavLink to='/' style={{padding: 5}}>About us</NavLink>
+                            <NavLink to='/' style={{padding: 5}}>FAQ</NavLink>
+                            <NavLink to='/' style={{padding: 5}}>Contact us</NavLink>
+                        </nav>
+                    </div>
                 </div>
                 <div className="film-description">
                     <h3>FIND US</h3>

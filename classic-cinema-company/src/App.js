@@ -6,8 +6,6 @@ import HomePage from './components/HomePage';
 import Schedule from './components/Schedule';
 import SignUp from './components/SignUp';
 import ComingSoon from "./components/ComingSoon";
-import YourVisit from "./components/YourVisit";
-import BookTickets from "./components/BookTickets";
 import FilmDetail from './components/FilmDetail';
 
 function App() {
@@ -21,8 +19,6 @@ function App() {
           <Route path='/schedule' element={<Schedule />}/>
           <Route path='/signup' element={<SignUp />}/>
           <Route path='/comingsoon' element={<ComingSoon />}></Route>
-          <Route path='/yourvisit' element={<YourVisit />}></Route>
-          <Route path='/booktickets' element={<BookTickets />}></Route>
           <Route path='/films/:id' element={<FilmDetail />}></Route>
           <Route path='*' element={<HomePage />}></Route>
         </Routes>

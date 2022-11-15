@@ -17,8 +17,6 @@ const Header = () => {
             <NavLink to='/schedule' style={{padding: 5}}>What's On</NavLink>
             <NavLink to='/comingsoon' style={{padding: 5}}>Coming Soon</NavLink>
             <NavLink to='/signup' style={{padding: 5}}>Sign Up</NavLink>
-            <NavLink to='/yourvisit' style={{padding: 5}}>Your Visit</NavLink>
-            <NavLink to='/booktickets' style={{padding: 5}}>Book Tickets</NavLink>
             <input type="text" placeholder="Search" />
             </nav>
             </div>

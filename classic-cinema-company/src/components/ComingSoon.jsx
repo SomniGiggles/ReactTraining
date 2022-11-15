@@ -3,6 +3,8 @@ import filmsFile from "../assets/films.json";
 import { NavLink } from 'react-router-dom';
 import "./NowShowing.css";
 
+import CertificateIcon from './CertificateIcon';
+
 
 const ComingSoon = () => {
     const formatDate = (textDate) => {
@@ -19,6 +21,7 @@ const ComingSoon = () => {
         <div key={film.id} className="nowShowingMovie">
             <img src={`/${film.nowShowingSrcset.small}`} alt={film.nowShowingSrcset.small} />
             <h3><NavLink className='filmTitle' to={`/films/${film.id}`}>{film.title}</NavLink></h3>
+            <CertificateIcon age={film.agecert} />
             <p>Film opens on {formatDate(film.startingDate)}</p>
             <NavLink className="button-42" to='/booktickets'>Pre-book now</NavLink>
         </div>

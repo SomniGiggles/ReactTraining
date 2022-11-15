@@ -3,8 +3,14 @@ import films from "../assets/films.json";
 import FilmInfo from "./FilmInfo";
 
 const Schedule = () => {
+
+    const filmsNowShowing = films.films.filter(film => {
+        if (!film.startingDate)
+            return true;
+        return Date.parse(film.startingDate) <= new Date();
+    });
     
-    const allFilms = (films.films).map(film => 
+    const allFilms = (filmsNowShowing).map(film => 
         <FilmInfo 
             key={film.id}
             id={film.id}

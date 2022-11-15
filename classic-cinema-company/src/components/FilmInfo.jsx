@@ -14,7 +14,7 @@ const FilmInfo = (props) => {
             <CertificateIcon age={props.ageCert} />
             <div className="film-description">{props.description}</div>
             <div className="film-container">{allTimes}</div>
-            <button className="button-42">Book now</button>
+            <NavLink className="button-42" to='/booktickets'>Book now</NavLink>
         </div>
     )
 }
